@@ -3,9 +3,9 @@ import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube} from 'react-icons/ai';
 import Image from "next/image";
 import profile_pic from '../public/profile_pic.png';
-import design from '../public/design.png';
-import code from '../public/code.png';
-import consulting from '../public/consulting.png';
+import HTML from '../public/HTML.png';
+import Data from '../public/Data.png';
+import Modem from '../public/Modem.png';
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
@@ -69,7 +69,7 @@ export default function Home() {
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              <Image className="mx-auto" src={design} width={100} height={100}/>
+              <Image className="mx-auto" src={HTML} width={100} height={100}/>
               <h3 className="text-lg font-medium pt-8 pb-2">Software Development</h3>
               <p className="py-2">
                 I have a strong background in HTML, CSS, JavaScript, and 
@@ -82,7 +82,10 @@ export default function Home() {
               <p className="text-gray-800 py-1">Tailwind</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              <Image className="mx-auto" src={code} width={100} height={100}/>
+              <div className="mx-auto bg-gray-600 rounded-full w-100 h-100">
+                <Image className="mx-auto pt-2" src={Data} width={80} height={80}/>
+              </div>
+              
               <h3 className="text-lg font-medium pt-8 pb-2">Databases</h3>
               <p className="py-2">
                 I have extensive knowledge in Object-Oriented Programming (OOP) 
@@ -96,7 +99,9 @@ export default function Home() {
               <p className="text-gray-800 py-1">Git/Github</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              <Image className="mx-auto" src={consulting} width={100} height={100}/>
+              <div className="mx-auto rounded-full w-100 h-100 overflow-hidden">
+                <Image className="mx-auto" src={Modem} width={120} height={120}/>
+              </div>
               <h3 className="text-lg font-medium pt-8 pb-2">Information Technology</h3>
               <p className="py-2">
                 I like to bring focus to the hardware and network side of 
