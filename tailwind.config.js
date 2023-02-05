@@ -12,10 +12,11 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        '100': '100px',
+        '100px': '100px',
        },
        height: {
-        '100': '100px',
+        '100px': '100px',
+        '2px': '2px',
        },
     },
   },

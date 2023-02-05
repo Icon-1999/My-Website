@@ -1,6 +1,6 @@
 import Head from "next/head";
 import {BsFillMoonStarsFill} from 'react-icons/bs';
-import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube} from 'react-icons/ai';
+import {AiFillGithub, AiFillLinkedin, AiFillYoutube} from 'react-icons/ai';
 import Image from "next/image";
 import profile_pic from '../public/profile_pic.png';
 import HTML from '../public/HTML.png';
@@ -25,7 +25,7 @@ export default function Home() {
       </Head>
 
       <main className="bg-white px-10 md:px-20 lg:px-20 dark:bg-gray-900">
-        <section className="min-h-screen">
+        <section className="min-h-screen lg:min-h-screen">
           <nav className="pb-10 pt-5 flex justify-between">
             <h1 className="text-xl">My Portfolio</h1>
             <ul className="flex gap-2">
@@ -59,16 +59,16 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <hr />
-        <section id="experience">
-          <div className="text-center mt-6">
+        <hr id="experience" className="mx-auto rounded bg-gray-200 border-0 mb-5 h-px md: w-4/5"/>
+        <section>
+          <div className="text-center">
             <h3 className="text-3xl py-1">Experience</h3>
             <p className="text-md py-2 leading-8 text-gray-800">
               I'm a Cal State Northridge undergraduate student with a strong background in computer science and a passion for technology, I'm knowledgeable in a range of concepts pertaining to the field. Being well-versed in modern front-end development practices, data sorting and analysis, and skills in IT.
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="flex-1 text-center shadow-lg p-10 rounded-xl my-10">
               <Image className="mx-auto" src={HTML} width={100} height={100}/>
               <h3 className="text-lg font-medium pt-8 pb-2">Software Development</h3>
               <p className="py-2">
@@ -81,8 +81,8 @@ export default function Home() {
               <p className="text-gray-800 py-1">React, Next.js</p>
               <p className="text-gray-800 py-1">Tailwind</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              <div className="mx-auto bg-gray-600 rounded-full w-100 h-100">
+            <div className="flex-1 text-center shadow-lg p-10 rounded-xl my-10">
+              <div className="mx-auto bg-gray-600 rounded-full w-100px h-100px">
                 <Image className="mx-auto pt-2" src={Data} width={80} height={80}/>
               </div>
               
@@ -98,8 +98,8 @@ export default function Home() {
               <p className="text-gray-800 py-1">SQL</p>
               <p className="text-gray-800 py-1">Git/Github</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              <div className="mx-auto rounded-full w-100 h-100 overflow-hidden">
+            <div className="flex-1 text-center shadow-lg p-10 rounded-xl my-10">
+              <div className="mx-auto rounded-full w-100px h-100px overflow-hidden">
                 <Image className="mx-auto" src={Modem} width={120} height={120}/>
               </div>
               <h3 className="text-lg font-medium pt-8 pb-2">Information Technology</h3>
@@ -116,7 +116,8 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="projects">
+        <hr id="projects" className="mx-auto rounded bg-gray-200 border-0 mb-5 h-px md: w-4/5"/>
+        <section>
           <div className="text-center">
             <h3 className="text-3xl py-1">Projects</h3>
             <p className="text-md py-2 leading-8 text-gray-800">
@@ -138,11 +139,15 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <hr id="my_contact" className="mx-auto rounded bg-gray-200 border-0 mb-5 h-px md: w-4/5"/>
         <section>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-            <AiFillTwitterCircle/>
+            <AiFillGithub/>
             <AiFillYoutube/>
             <AiFillLinkedin/>
+          </div>
+          <div className="text-gray-600 text-center text-xl p-3">
+            <a href="armonlee99@gmail.com">armonlee99@gmail.com</a>
           </div>
         </section>
       </main>
