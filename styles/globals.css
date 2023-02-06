@@ -104,6 +104,26 @@ a {
   text-decoration: none;
 }
 
+main {
+  background-color: #f6f6f2;
+  color:#333D51;
+}
+
+h2 {
+  color: #388087;
+}
+
+.resume {
+  color: white;
+  background-color: #6fb3b8;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+h4 {
+  font-size: 18px;
+  color: #6fb3b8;
+}
 /*
 @media (prefers-color-scheme: dark) {
   html {

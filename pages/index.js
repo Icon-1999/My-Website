@@ -6,12 +6,8 @@ import profile_pic from '../public/profile_pic.png';
 import HTML from '../public/HTML.png';
 import Data from '../public/Data.png';
 import Modem from '../public/Modem.png';
-import web1 from "../public/web1.png";
+import AlgoVisualizer from "../public/AlgoVisualizer.png";
 import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
 import{useState} from "react";
 
 export default function Home() {
@@ -24,11 +20,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-10 md:px-20 lg:px-20 dark:bg-gray-900">
+      <main className=" font-serif px-10 md:px-20 lg:px-20 dark:bg-gray-900 dark:text-gray-400">
         <section className="min-h-screen lg:min-h-screen">
           <nav className="pb-10 pt-5 flex justify-between">
-            <h1 className="text-xl">My Portfolio</h1>
-            <ul className="flex gap-2">
+            <h1 className="text-xl md:text-2xl">My Portfolio</h1>
+            <ul className="flex gap-2 my-auto md:text-l">
               <li>
                 <a href="#experience">Experience</a>
               </li>
@@ -36,7 +32,7 @@ export default function Home() {
                 <a href="#projects">Projects</a>
               </li>
               <li>
-                <a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md"  href="#">Resume</a>
+                <a class="resume" href="https://drive.google.com/file/d/1U_Uift6x-dm-ExtmQosyWCX7cyoFH2xg/view?usp=sharing" target="_blank">Resume</a>
               </li>
               <li>
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="curser-pointer text-xl"/>
@@ -47,9 +43,9 @@ export default function Home() {
             <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 overflow-hidden md:h-70 md:w-70">
               <Image src={profile_pic} layout="fill" objectFit="cover"/>
             </div>
-            <h2 className="text-5xl py-2 text-teal-600 font-medium md=6xl">Armon J. Lee</h2>
+            <h2 className="text-5xl py-2 font-medium md=6xl">Armon J. Lee</h2>
             <h3 className="text-2xl py-2 md:text-3xl">Computer Science Major</h3>
-            <div className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-4xl mx-auto">
+            <div className="text-md py-5 leading-8  md:text-xl max-w-4xl mx-auto">
               <p className="mb-5">
                 Computer science has always been a source of inspiration and growth for me, as it offers endless possibilities for creativity and learning. Moreover, I have a deep appreciation for the process of acquiring new skills and continuously improving my knowledge and expertise.
               </p>
@@ -59,16 +55,16 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <hr id="experience" className="mx-auto rounded bg-gray-200 border-0 mb-5 h-px md: w-4/5"/>
+        <hr id="experience" className="mx-auto rounded bg-gray-200 border-0 mb-5 h-2px dark:bg-gray-700 md: w-4/5"/>
         <section>
           <div className="text-center">
             <h3 className="text-3xl py-1">Experience</h3>
-            <p className="text-md py-2 leading-8 text-gray-800">
+            <p className="text-md py-2 leading-8 ">
               I'm a Cal State Northridge undergraduate student with a strong background in computer science and a passion for technology, I'm knowledgeable in a range of concepts pertaining to the field. Being well-versed in modern front-end development practices, data sorting and analysis, and skills in IT.
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="flex-1 text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="flex-1 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-800">
               <Image className="mx-auto" src={HTML} width={100} height={100}/>
               <h3 className="text-lg font-medium pt-8 pb-2">Software Development</h3>
               <p className="py-2">
@@ -76,16 +72,15 @@ export default function Home() {
                 various front-end frameworks and libraries, but overall
                 I love making functional user-friendly programs.
               </p>
-              <h4 className="py-4 text-teal-600">Skills</h4>
-              <p className="text-gray-800 py-1">Javascript, HTML, CSS</p>
-              <p className="text-gray-800 py-1">React, Next.js</p>
-              <p className="text-gray-800 py-1">Tailwind</p>
+              <h4 className="py-4 ">Skills</h4>
+              <p className=" py-1">Javascript, HTML, CSS</p>
+              <p className=" py-1">React, Next.js</p>
+              <p className=" py-1">Tailwind</p>
             </div>
-            <div className="flex-1 text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="flex-1 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-800">
               <div className="mx-auto bg-gray-600 rounded-full w-100px h-100px">
                 <Image className="mx-auto pt-2" src={Data} width={80} height={80}/>
               </div>
-              
               <h3 className="text-lg font-medium pt-8 pb-2">Databases</h3>
               <p className="py-2">
                 I have extensive knowledge in Object-Oriented Programming (OOP) 
@@ -93,12 +88,12 @@ export default function Home() {
                 In addition, I'm familiar with data analysis concepts and have 
                 practical experience working with SQL databases.
               </p>
-              <h4 className="py-4 text-teal-600">Skills</h4>
-              <p className="text-gray-800 py-1">Python, Java, C++</p>
-              <p className="text-gray-800 py-1">SQL</p>
-              <p className="text-gray-800 py-1">Git/Github</p>
+              <h4 className="py-4 ">Skills</h4>
+              <p className=" py-1">Python, Java, C++</p>
+              <p className=" py-1">SQL</p>
+              <p className=" py-1">Git/Github</p>
             </div>
-            <div className="flex-1 text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="flex-1 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-800">
               <div className="mx-auto rounded-full w-100px h-100px overflow-hidden">
                 <Image className="mx-auto" src={Modem} width={120} height={120}/>
               </div>
@@ -109,18 +104,18 @@ export default function Home() {
                 server hosting/maintenance, VPNs, creating access points,
                 and more!
               </p>
-              <h4 className="py-4 text-teal-600">Skills</h4>
-              <p className="text-gray-800 py-1">Linux/Bash</p>
-              <p className="text-gray-800 py-1">Networking</p>
-              <p className="text-gray-800 py-1">OS</p>
+              <h4 className="py-4 ">Skills</h4>
+              <p className=" py-1">Linux/Bash</p>
+              <p className=" py-1">Networking</p>
+              <p className=" py-1">OS</p>
             </div>
           </div>
         </section>
-        <hr id="projects" className="mx-auto rounded bg-gray-200 border-0 mb-5 h-px md: w-4/5"/>
+        <hr id="projects" className="mx-auto rounded bg-gray-200 border-0 mb-5 h-2px dark:bg-gray-700 md: w-4/5"/>
         <section>
           <div className="text-center">
             <h3 className="text-3xl py-1">Projects</h3>
-            <p className="text-md py-2 leading-8 text-gray-800">
+            <p className="text-md py-2 leading-8 ">
               As a dedicated computer science major with a passion for creating 
               innovative and effective work, I have built a diverse portfolio of
               projects that showcase my skills and expertise. From web applications 
@@ -128,26 +123,30 @@ export default function Home() {
               with a wide range of technologies and platforms to bring ideas to life.
             </p>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 text-center shadow-lg rounded-xl overflow-hidden pb-10">
-              <Image src={web1} className="object-cover" width={'100%'} height={'100%'} layout="responsive"/>
-              <p className="p-1">Raspberry Pi Project</p>
+          <div className="flex flex-col gap-10 py-10 lg:flex-row flex-wrap">
+            <div className="basis-1/3 flex-1 text-center overflow-hidden lg:basis-0">
+              <Image src={AlgoVisualizer} className="object-cover rounded-xl shadow-lg border-2 border-gray-400" width={'100%'} height={'100%'}/>
+              <h5 className="m-auto p-1 text-xl">Sorting Algo Project</h5>
+            </div>     
+            <div className="basis-1/3 flex-1 lg:basis-0">
+              <p></p>
             </div>
-            <div className="basis-1/3 flex-1 text-center shadow-lg rounded-xl overflow-hidden pb-10">
-              <Image src={web2} className="object-cover" width={'100%'} height={'100%'} layout="responsive"/>
-              <p className="p-1">Sorting Algo Project</p>
+            <div className="basis-1/3 flex-1 lg:basis-0">
+              <p></p>
             </div>
           </div>
         </section>
-        <hr id="my_contact" className="mx-auto rounded bg-gray-200 border-0 mb-5 h-px md: w-4/5"/>
+        <hr id="my_contact" className="mx-auto rounded bg-gray-200 border-0 mb-5 h-2px dark:bg-gray-700 md: w-4/5"/>
         <section>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-            <AiFillGithub/>
-            <AiFillYoutube/>
-            <AiFillLinkedin/>
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+            <a href="https://github.com/Icon-1999" target="_blank"><AiFillGithub/></a>
+            <a href="https://www.youtube.com/channel/UCdUOoi3YPi8j92yXMAloBUg" target="_blank"><AiFillYoutube/></a>
+            <a href="https://www.linkedin.com/in/armon-lee-972952256/" target="_blank"><AiFillLinkedin/></a>
           </div>
-          <div className="text-gray-600 text-center text-xl p-3">
-            <a href="armonlee99@gmail.com">armonlee99@gmail.com</a>
+          <div className="text-gray-600 text-center text-xl p-3 dark:text-gray-400">
+            <address>
+              <a href="mailto:armonjlee99@gmail.com">armonjlee99@gmail.com</a>
+            </address>
           </div>
         </section>
       </main>
