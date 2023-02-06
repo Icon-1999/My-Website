@@ -124,10 +124,10 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row flex-wrap">
-            <div className="basis-1/3 flex-1 text-center overflow-hidden lg:basis-0">
+            <a href="https://github.com/Icon-1999/Sorting-Algo-Project/tree/main" target="_blank" className="basis-1/3 flex-1 text-center overflow-hidden lg:basis-0">
               <Image src={AlgoVisualizer} className="object-cover rounded-xl shadow-lg border-2 border-gray-400" width={'100%'} height={'100%'}/>
               <h5 className="m-auto p-1 text-xl">Sorting Algo Project</h5>
-            </div>     
+            </a>     
             <div className="basis-1/3 flex-1 lg:basis-0">
               <p></p>
             </div>
